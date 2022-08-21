@@ -1,0 +1,60 @@
+CONFIGURACION INICIAL =
+git --version                                                   Conocer la version de git instalada en el pc
+git config --global                                             Configuracion global del git
+git config --global user.name "Miguel Angel Diaz D"
+git config --global user.email "migerodd888@gmail.com"
+git config --global core.editor "Visual Studio Code --wait"
+git config --global -e
+git config --global core.autocrlf true                          Para usuarios de Windows
+git config -h                                                   Revisar los comandos posibles de configuraciones
+
+
+NAVEGAR =
+ls                                                              Directorio de carpetas y archivos donde me encuentro
+ls -a                                                           Mostrar todo incluido documentos ocultos
+pwd                                                             Donde me encuentro
+cd                      Carpeta a donde nos queremos mover con tap para autocompletar los argumentos e ir ingresando
+cd ..                                                           devolverme 1 mas atras en el directorio
+mkdir NombreCarpeta                                             crear carpeta
+cat NombreArchivo                                               Revisar el contenido del archivo
+code .                                                          Abrir el editor en la carpeta donde estamos
+git status                                                      Estado actual del proyecto
+git status -s                                                   Ver estado de los archivos
+git diff                                                        ver los cambios de archivos modificados
+git log                                                         Historial de los commit con info completa
+git log --oneline                                               Historial con identificador de commit
+git init                                                        Iniciar Git
+
+ETAPAS DE INGRESO DE ARCHIVOS = Computador >>  Stage >> Commit >> Server.
+Git add NombreArchivo                                           Añadir archivo especifico o separados por espacio
+got add .TipoArchivos                                           Añadir todos los tipos de archivos especificados
+git add .                                                       Añadir todos los archivos en la carpeta
+git rm NombreArchivo                                            Eliminar archivo especifico o separados por espacio
+git restore NombreArchivo                                       Restaurar archivo
+mv NombreArchivo NombreNuevo                                    Cambiar nombre del archivo
+
+git commit -m "Mensaje con sentido"                             Realizar commit
+git commit
+IGNORAR ARCHIVOS = crear archivo .gitignore en la carpeta y añadir archivos o direccion de carpetas en el.
+
+RAMAS O BRANCHES =  Main es la rama principal
+git branch                                                      En que rama nos encontramos
+git branch -m main                                              Clase main
+git checkout -b NombreRama                                      Crear rama
+git checkout NombreRama                                         Moverme a la rama mencionada
+git merge NombreRama                                            Traer la rama mencionada a la rama main
+
+Ingresar al server GitHub =
+git clone URLdelRepositorio
+git remote add origin URLdelRepositorio
+git push -u origin main
+
+git remote set-url origin
+git remote --verbose
+git push -u origin main
+
+LINKS = 
+grupo de programadores = 
+https://github.com/UPD-Unstoppable-Programming-Developers/EjercicioDePractica.git
+personal = 
+https://github.com/MiguelImparable/test-repositorio.git
